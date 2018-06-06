@@ -10,12 +10,15 @@
             <li id="home"  class="nav-item">
               <a class="nav-link" href="${contextRoot}/home">Home</a>
             </li>
+            
+            <li id="listproduct" class="nav-item">
+              <a class="nav-link" href="${contextRoot}/show/all/products">View Product</a>
+            </li>
+            
             <li  id="about" class="nav-item">
               <a class="nav-link" href="${contextRoot}/about">About</a>
             </li>
-            <li id="listproduct" class="nav-item">
-              <a class="nav-link" href="#">View Product</a>
-            </li>
+          
             <li id="contact"class="nav-item">
               <a class="nav-link" href="${contextRoot}/contact">Contact</a>
             </li>
