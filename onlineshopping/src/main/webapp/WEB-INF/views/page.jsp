@@ -23,13 +23,25 @@
 
 <script>
 	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}';
+	
 </script>
 
 <!-- Bootstrap core CSS -->
+<link href="${css}/bootstrap.css" rel="stylesheet">
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Spacelab CSS -->
 <link href="${css}/bootstrap.spacelab.theme.css" rel="stylesheet">
+
+<link href="${css}/fontawesome-all.min.css" rel="stylesheet">
+
+<!-- Bootstrap DataTable CSS -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+<!-- Bootstrap4 DataTable CSS -->
+<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -66,6 +78,10 @@
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 			
+			<!-- Load Only when user click on Show Products -->
+			<c:if test="${userClickShowProduct == true}">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
 			
 			<!-- /.container -->
 		</div>
@@ -76,6 +92,17 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!--  DataTable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!--  DataTable BootStrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		<!--  DataTable BootStrap Script -->
+		<script src="${js}/dataTables.bootstrap4.js"></script>
+		
+				
 		<!-- self coded javascript  -->
 		<script src="${js}/myapp.js"></script>
 

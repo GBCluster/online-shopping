@@ -32,11 +32,23 @@ custom styling
 	position:relative;
 }
 .content{
-	padding-bottom:20px;	/* height of the footer*/
+	padding-bottom:60px;	/* height of the footer*/
 
 }
 .footer{
 	position:absolute;
 	bottom:0px;
+	
+}
+
+.dataTableImg{
+	width:100px;
+	height:100px;
+	
+}
+
+.singleProduct{
+	width:350px;
+	height:350px;
 	
 }
